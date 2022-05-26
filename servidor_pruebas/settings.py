@@ -34,6 +34,7 @@ ALLOWED_HOSTS = ['localhost','192.168.11.250']
 INSTALLED_APPS = [
     'rest_framework', #pruebas para api -restfull
     'administrador', #app de pruebas ADMINLTE
+    'dj_puro',      #App de api rest puro django
     'django.contrib.admin',
     'django.contrib.auth',
     'django.contrib.contenttypes',
