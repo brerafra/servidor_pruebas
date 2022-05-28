@@ -14,7 +14,7 @@ environ.Env.read_env()
 SECRET_KEY = env.str('SECRET_KEY')
 
 
-DEBUG = env.bool('DEBUG', default=False)
+DEBUG = env.bool('DEBUG', default=True)
 
 ALLOWED_HOSTS = tuple(env.list('ALLOWED_HOSTS'))
 
@@ -34,6 +34,7 @@ LOCAL_APPS = [
     'administrador', #app de pruebas ADMINLTE
     'dj_puro',      #App de api rest puro django
     'web_rest',     #App restapi 
+    'logistic',
 ]
 
 THIRD_APPS = [
@@ -107,10 +108,10 @@ USE_TZ = True
 # Static files (CSS, JavaScript, Images)
 # https://docs.djangoproject.com/en/4.0/howto/static-files/
 
-STATIC_URL = 'static/'
-#STATICFILES_DIRS = [
-#    os.path.join(BASE_DIR, "static"),
-#]
+STATIC_URL = '/static/'
+STATICFILES_DIRS = [
+    os.path.join(BASE_DIR, "static"),
+]
 
 # Default primary key field type
 # https://docs.djangoproject.com/en/4.0/ref/settings/#default-auto-field

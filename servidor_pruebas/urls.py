@@ -9,4 +9,5 @@ urlpatterns = [
     path('',include('administrador.urls')),
     path('accounts/', include('django.contrib.auth.urls')),
     path('api_django/',include('dj_puro.urls')),
+    path('log/',include('logistic.urls'))
 ]
